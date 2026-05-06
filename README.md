@@ -244,3 +244,7 @@ PHP_Laravel12_Wire_Spy/
 ---
 
 Your PHP_Laravel12_Wire_Spy Project is now ready!
+<<<<<<< HEAD
+=======
+
+>>>>>>> development
