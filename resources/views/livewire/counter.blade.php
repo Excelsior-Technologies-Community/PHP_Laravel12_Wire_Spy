@@ -1,16 +1,19 @@
-<div class="counter-box">
+<div class="p-6 bg-slate-50 dark:bg-slate-700 rounded-2xl border border-slate-200 dark:border-slate-600 shadow-inner transition-all duration-300">
+    
+    <h2 class="text-lg font-bold text-slate-700 dark:text-slate-200 mb-4">
+        Live Counter
+    </h2>
 
-    {{-- Success Message --}}
-    @if (session()->has('success'))
-        <div style="background: #d1fae5; color: #065f46; padding:8px; margin-bottom:10px; border-radius:5px;">
-            {{ session('success') }}
-        </div>
-    @endif
+    <div class="text-4xl font-black text-blue-600 dark:text-blue-400 mb-6">
+        {{ $count }}
+    </div>
 
-    <h2>Counter: {{ $count }}</h2>
-
-    <button wire:click="increment" style="padding:10px; margin-top:10px;">
-        Increment
+    <button wire:click="increment" 
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-xl transition-transform active:scale-95 shadow-md">
+        Increment Value
     </button>
-
+    
+    <p class="text-xs text-slate-400 dark:text-slate-500 mt-4 text-center">
+        Real-time component tracking enabled
+    </p>
 </div>
